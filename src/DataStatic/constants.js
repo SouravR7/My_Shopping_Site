@@ -13,7 +13,7 @@ export default [
     title: "KRUPS Electric Spice",
     price: "$19.99",
     description:
-      "Large grinding capacity yields ground coffee for up to 12 cups of coffee",
+      'Large grinding capacity yields ground coffee for up to 12 cups of coffee.Less than 14 cm (5.5") wide slim design, its the perfect size for any space.',
     avatarUrl:
       "https://images-na.ssl-images-amazon.com/images/I/81CbxNLCHCL._AC_SL1500_.jpg",
     imageUrl:

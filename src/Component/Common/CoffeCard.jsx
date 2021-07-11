@@ -8,8 +8,14 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import ShareIcon from "@material-ui/icons/Share";
 import { Avatar, IconButton, CardMedia } from "@material-ui/core";
+import LinesEllipsis from 'react-lines-ellipsis'
 
 const CoffeCard = props => {
+
+  const styles = makeStyles({
+    
+  })
+
   const { avatarUrl, title, subtitle, description, imageUrl } = props;
   return (
     <Card>
@@ -26,12 +32,19 @@ const CoffeCard = props => {
       <CardMedia style={{ height: "150px" }} image={imageUrl} />
       <CardContent>
         <Typography variant="body2" component="p">
-          {description}
+        <LinesEllipsis
+          text={description}
+          maxLine='3'
+          ellipsis='...'
+          trimRight
+          basedOn='letters'
+        />
+          
         </Typography>
       </CardContent>
       <CardActions>
         <Button size="small">BUY NOW</Button>
-        <Button size="small">OFFER</Button>
+        <Button size="small">Add To Cart</Button>
       </CardActions>
     </Card>
   );
